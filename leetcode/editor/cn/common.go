@@ -1,4 +1,4 @@
-package cn
+package leetcode_cn
 
 import (
 	"bytes"

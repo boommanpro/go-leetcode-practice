@@ -1,4 +1,9 @@
-package cn
+package leetcode_cn
+
+import (
+	"github.com/stretchr/testify/assert"
+	"testing"
+)
 
 //反转一个单链表。
 //
@@ -32,3 +37,12 @@ func reverseList(head *ListNode) *ListNode {
 }
 
 //leetcode submit region end(Prohibit modification and deletion)
+
+func TestReverseLinkedList(t *testing.T) {
+	// 输入: 1->2->3->4->5->NULL
+	//输出: 5->4->3->2->1->NULL
+	node := NewListNode(1)
+	node.addNodeForValue(2).addNodeForValue(3).addNodeForValue(4).addNodeForValue(5)
+	list := reverseList(node)
+	assert.Equal(t, "5->4->3->2->1", list.String())
+}
