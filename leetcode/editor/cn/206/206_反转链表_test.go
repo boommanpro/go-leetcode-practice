@@ -1,7 +1,8 @@
-package leetcode_cn
+package leetcode_cn_206
 
 import (
 	"github.com/stretchr/testify/assert"
+	. "go-leetcode-practice/leetcode/editor/cn/common"
 	"testing"
 )
 
@@ -15,6 +16,7 @@ import (
 // 进阶:
 //你可以迭代或递归地反转链表。你能否用两种方法解决这道题？
 // Related Topics 链表
+// 👍 1137 👎 0
 
 //leetcode submit region begin(Prohibit modification and deletion)
 /**
@@ -25,6 +27,7 @@ import (
  * }
  */
 func reverseList(head *ListNode) *ListNode {
+
 	if head == nil || head.Next == nil {
 		return head
 	}
@@ -42,7 +45,7 @@ func TestReverseLinkedList(t *testing.T) {
 	// 输入: 1->2->3->4->5->NULL
 	//输出: 5->4->3->2->1->NULL
 	node := NewListNode(1)
-	node.addNodeForValue(2).addNodeForValue(3).addNodeForValue(4).addNodeForValue(5)
+	node.AddNodeForValue(2).AddNodeForValue(3).AddNodeForValue(4).AddNodeForValue(5)
 	list := reverseList(node)
 	assert.Equal(t, "5->4->3->2->1", list.String())
 }

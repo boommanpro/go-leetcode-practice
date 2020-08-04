@@ -4,8 +4,11 @@ My Go Leetcode Practice
 
 ## Leetcode editor For Goland
 
+因为相同包下的方法只允许存在一个,遂采用不同包把题目分割开。
 
-CodeFileName: $!{question.frontendQuestionId}_$!velocityTool.camelCaseName(${question.titleSlug})_test
+link:[solve golang package only have same func](https://github.com/shuzijun/leetcode-editor/issues/220)
+
+CodeFileName: ${question.frontendQuestionId}/$!{question.frontendQuestionId}_${question.title}_test
 
 ```
 package leetcode_cn

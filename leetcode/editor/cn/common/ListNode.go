@@ -1,4 +1,4 @@
-package leetcode_cn
+package common
 
 import (
 	"bytes"
@@ -23,14 +23,14 @@ func (curr *ListNode) String() string {
 	return buf.String()
 }
 
-func (curr *ListNode) addNode(node *ListNode) *ListNode {
+func (curr *ListNode) AddNode(node *ListNode) *ListNode {
 	curr.Next = node
 	return node
 }
 
-func (curr *ListNode) addNodeForValue(value int) *ListNode {
+func (curr *ListNode) AddNodeForValue(value int) *ListNode {
 
-	return curr.addNode(NewListNode(value))
+	return curr.AddNode(NewListNode(value))
 }
 
 func NewListNode(value int) *ListNode {
