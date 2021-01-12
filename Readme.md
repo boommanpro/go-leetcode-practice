@@ -11,19 +11,19 @@ link:[solve golang package only have same func](https://github.com/shuzijun/leet
 CodeFileName: ${question.frontendQuestionId}/$!{question.frontendQuestionId}_${question.title}_test
 
 ```
-package leetcode_cn
+package leetcode_cn_$!{question.frontendQuestionId}
 
 import (
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
 
+
 ${question.content}
 
 ${question.code}
 
-func Test$!velocityTool.camelCaseName(${question.titleSlug})(t *testing.T) {
-
+func Test(t *testing.T) {
 }
 
 ```
